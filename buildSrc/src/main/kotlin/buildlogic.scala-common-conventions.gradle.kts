@@ -16,12 +16,7 @@ dependencies {
     constraints {
         // Define dependency versions as constraints
         implementation("org.apache.commons:commons-text:1.11.0")
-
-        implementation("org.scala-lang:scala-library:2.13.12")
     }
-
-    // Use Scala 2.13 in our library project
-    implementation("org.scala-lang:scala-library")
 
     // Use JUnit Jupiter for testing.
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.1")

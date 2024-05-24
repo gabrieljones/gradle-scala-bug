@@ -4,11 +4,19 @@
 
 plugins {
     id("buildlogic.scala-application-conventions")
+    scala
 }
 
 dependencies {
+    implementation("org.scala-lang:scala-library:2.13.14")
     implementation("org.apache.commons:commons-text")
     implementation(project(":utilities"))
+}
+
+tasks.withType(ScalaCompile::class.java) {
+    scalaCompileOptions.additionalParameters = listOf(
+        "-Ytasty-reader",
+    )
 }
 
 application {

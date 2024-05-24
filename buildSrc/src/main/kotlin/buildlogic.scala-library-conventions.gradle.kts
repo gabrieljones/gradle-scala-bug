@@ -9,3 +9,8 @@ plugins {
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
 }
+
+dependencies {
+
+    implementation("org.scala-lang:scala3-library_3:3.4.2")
+}
