@@ -11,6 +11,5 @@ plugins {
 }
 
 dependencies {
-
-    api("org.scala-lang:scala3-library_3:3.4.2")
+    implementation("org.scala-lang:scala3-library_3:3.4.2")
 }

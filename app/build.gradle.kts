@@ -16,6 +16,7 @@ dependencies {
 tasks.withType(ScalaCompile::class.java) {
     scalaCompileOptions.additionalParameters = listOf(
         "-Ytasty-reader",
+        "-Ytasty-no-annotations"
     )
 }
 
