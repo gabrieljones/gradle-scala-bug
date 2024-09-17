@@ -14,9 +14,7 @@ dependencies {
 }
 
 tasks.withType(ScalaCompile::class.java) {
-    scalaCompileOptions.additionalParameters = listOf(
-        "-Ytasty-reader",
-    )
+    scalaCompileOptions.additionalParameters.add("-Ytasty-reader")
 }
 
 application {
