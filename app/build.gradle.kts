@@ -10,13 +10,12 @@ plugins {
 dependencies {
     implementation("org.scala-lang:scala-library:2.13.14")
     implementation("org.apache.commons:commons-text")
-    implementation(project(":utilities"))
+    api(project(":utilities"))
 }
 
 tasks.withType(ScalaCompile::class.java) {
     scalaCompileOptions.additionalParameters = listOf(
         "-Ytasty-reader",
-        "-Ytasty-no-annotations"
     )
 }
 
