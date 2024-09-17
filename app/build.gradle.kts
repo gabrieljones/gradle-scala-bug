@@ -10,7 +10,7 @@ plugins {
 dependencies {
     implementation("org.scala-lang:scala-library:2.13.14")
     implementation("org.apache.commons:commons-text")
-    api(project(":utilities"))
+    implementation(project(":utilities"))
 }
 
 tasks.withType(ScalaCompile::class.java) {
